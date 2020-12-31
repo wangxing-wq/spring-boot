@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "foot",
+      "type": "com.wx.config.ConfigFoot",
+      "sourceType": "com.wx.config.ConfigFoot"
+    }
+  ],
+  "properties": [
+    {
+      "name": "foot.meat",
+      "type": "java.lang.String",
+      "sourceType": "com.wx.config.ConfigFoot"
+    },
+    {
+      "name": "foot.rice",
+      "type": "java.lang.String",
+      "sourceType": "com.wx.config.ConfigFoot"
+    }
+  ],
+  "hints": []
+}
