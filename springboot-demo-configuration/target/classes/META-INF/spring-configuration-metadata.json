@@ -1,12 +1,42 @@
 {
   "groups": [
     {
+      "name": "computer",
+      "type": "com.wx.config.ConfigComputer",
+      "sourceType": "com.wx.config.ConfigComputer"
+    },
+    {
       "name": "foot",
       "type": "com.wx.config.ConfigFoot",
       "sourceType": "com.wx.config.ConfigFoot"
+    },
+    {
+      "name": "vegetables",
+      "type": "com.wx.config.ConfigVegetables",
+      "sourceType": "com.wx.config.ConfigVegetables"
     }
   ],
   "properties": [
+    {
+      "name": "computer.cpu",
+      "type": "java.lang.String",
+      "sourceType": "com.wx.config.ConfigComputer"
+    },
+    {
+      "name": "computer.keyboard",
+      "type": "java.lang.String",
+      "sourceType": "com.wx.config.ConfigComputer"
+    },
+    {
+      "name": "computer.mouse",
+      "type": "java.lang.String",
+      "sourceType": "com.wx.config.ConfigComputer"
+    },
+    {
+      "name": "computer.viewing",
+      "type": "java.lang.String",
+      "sourceType": "com.wx.config.ConfigComputer"
+    },
     {
       "name": "foot.meat",
       "type": "java.lang.String",
@@ -16,6 +46,21 @@
       "name": "foot.rice",
       "type": "java.lang.String",
       "sourceType": "com.wx.config.ConfigFoot"
+    },
+    {
+      "name": "vegetables.eggplant",
+      "type": "java.lang.String",
+      "sourceType": "com.wx.config.ConfigVegetables"
+    },
+    {
+      "name": "vegetables.green-pepper",
+      "type": "java.lang.String",
+      "sourceType": "com.wx.config.ConfigVegetables"
+    },
+    {
+      "name": "vegetables.potato",
+      "type": "java.lang.String",
+      "sourceType": "com.wx.config.ConfigVegetables"
     }
   ],
   "hints": []
