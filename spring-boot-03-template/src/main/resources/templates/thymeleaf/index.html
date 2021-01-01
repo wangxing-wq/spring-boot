@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <body>
+    thymeleaf:是动静结合,运行时动态讲th代码替代原来内容 <br>
+        五种表达式 <br>
+    1:变量表达式<br>
+    <div th:text="${foot}">foot</div>\
+    2:选择表达式
+    <div th:object="${foot}">
+        <p th:text="*{meat}">meat</p>
+        <p th:text="*{rice}">ridce</p>
+    </div>
+    3:链接URL
+    <a href="http://www.baidu.com" th:href="@{/welcome.html}">测试URL</a>
+    4:消息表达式(引入外部文件信息)
+    <p th:utext="#{one}"> Welcome to our country</p>
+    5:片段
+    </body>
+</html>
