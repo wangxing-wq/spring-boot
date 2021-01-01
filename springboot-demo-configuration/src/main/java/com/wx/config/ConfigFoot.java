@@ -1,5 +1,6 @@
 package com.wx.config;
 
+import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
@@ -7,25 +8,13 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  */
 
 @ConfigurationProperties(prefix = "foot")
+@Data
 public class ConfigFoot {
 
 
     private String meat;
     private String rice;
+    private String [] sauce;
 
-    public String getMeat() {
-        return meat;
-    }
 
-    public void setMeat(String meat) {
-        this.meat = meat;
-    }
-
-    public String getRice() {
-        return rice;
-    }
-
-    public void setRice(String rice) {
-        this.rice = rice;
-    }
 }

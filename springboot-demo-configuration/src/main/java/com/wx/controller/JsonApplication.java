@@ -29,7 +29,7 @@ public class JsonApplication {
     @RequestMapping("/json")
     public Foot json(){
         System.out.println(configFoot.getMeat() + "===" +configFoot.getRice());
-        return new Foot(configFoot.getMeat(),configFoot.getRice());
+        return new Foot(configFoot.getMeat(),configFoot.getRice(),configFoot.getSauce());
     }
 
     @Autowired

@@ -1,0 +1,9 @@
+server:
+  port: 8081
+
+foot:
+  meat: 烤肉
+  rice: 拌饭
+  sauce:
+    - 咖喱味
+    - 原味
