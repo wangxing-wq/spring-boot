@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+ namespace 命名空间
+ -->
+<mapper namespace="com.wx.dao.GuestDao">
+
+    <insert id="addGuest">
+        insert into guest values(default,#{name},#{role})
+    </insert>
+
+    <delete id="deleteGuest">
+        delete from guest where id = #{id}
+    </delete>
+
+    <update id="updateGuest" parameterType="guest">
+        update guest set role = #{role} where id = #{id}
+    </update>
+
+    <select id="selectList" resultType="guest">
+        select ID,NAME,ROLE from guest
+    </select>
+
+    <select id="getGuest" parameterType="string" resultType="guest">
+        select id,name,role from guest where name = #{name}
+    </select>
+
+</mapper>

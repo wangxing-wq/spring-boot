@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/springboot?useSSL=false
+    password: root
+    username: root
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  mapper-locations: classpath*:mybatis/mapper/*.xml
+  config-location: classpath:mybatis-config.xml
+#  type-aliases-package:
+#  核心配置文件位置
+#  开启自动生成别名的扫描
+#  type-aliases-package:
